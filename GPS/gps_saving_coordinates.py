@@ -13,7 +13,7 @@ class GPS:
         self.previous_location = None
         self.csv_file = None
         file = open("gps_coordinates.txt", 'w')
-        self.csv_file = csv.writer(file, delimiter='\t')
+        self.csv_file = csv.writer(file)
 
     def gps_CB(self, msg):
         gps_msg = msg
